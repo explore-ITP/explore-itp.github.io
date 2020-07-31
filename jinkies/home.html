@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Jinkies: Concept Implementation</title>
+        <meta name="description">
+        
+        <link rel="stylesheet" media="screen and (min-width: 961px)" href="main.css" type="text/css">
+        <link rel="stylesheet" href="fonts.css" type="text/css">
+        <link rel="stylesheet" href="lightbox.css" type = "text/css">
+		<link rel="stylesheet" media="screen and (max-width: 960px)" href="main2.css" type="text/css">
+		
+        <link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src = "js/eyesMove.js"></script>
+            
+    </head>
+
+        
+    <header>
+        <div id = "superHeader">
+            <div class = "leftHeader">
+                <a href="home.html">
+                <div class="eyesMove">
+                <img id = "eyes" src="theme/TheJinkiesEyes2.png">
+                </div>
+				<img id="glasses" src="theme/TheJinkiesWithoutEyes.png">
+                </a>
+            </div>
+            
+                <div class = "navTop">
+                    Thunderbolt and Lightning, Very, Very Frightening
+                </div>
+            
+            <div class = "rightHeader">
+                
+                <div class = "navMenu">
+                    <a href="home.html" > <u> Home </u> </a> 
+                </div>
+                
+                <div class = "navMenu">
+                    <a href="sbFolder/lwSB.html" > Storyboard </a> 
+                </div> 
+                
+                <div class = "navMenu">
+                    <a href="assemblyFolder/assembly.html" > Assembly </a>
+                </div>
+                
+                <div class = "navMenu">
+                    <a href="logisticsFolder/logistics.html" > Logistics </a>
+                </div>
+            </div>        
+        </div>
+    </header>
+    
+    <body>
+        
+        <div class = "basket">
+            
+            <div class = "COPY">
+                
+                <div class = 'basketPic2'>
+                    <div class = "center hoverIm">
+                        <a href="media/jinkies-16.jpg" data-lightbox="image-1"><img src="media/jinkies-16.jpg" alt="image-1" /></a>
+                    </div>
+                </div>
+                    
+                
+                <div class = "basketText">
+                          <h2 class = "subtitleOrange"> Design Intent</h2>
+
+                        <p class = "basketConceptText">
+                            On your adventures through the mystery manor, you find yourself in a large game room, surrounded by taxidermic trophies and old rifles. There's a storm brewing outside, and you still have no idea how to get out of this God-forsaken mansion.
+                        </p>
+
+                         <p class = "basketConceptText">
+                            Suddenly, lightning strikes right next to the window! The power goes out and you can only see the room in the brief, blinding moments of lightning. The stuffed animals look alive in the eerie light, watching your every move, ready to pounce. You can barely hear your friends over the thunder rolling through, when suddenly one of them yells, "Look! A clue over there!"
+                        </p>
+
+                        <h2 class = "subtitleOrange"> Rationale </h2>
+
+                         <p class = "basketConceptText">
+                             Our vision for this project was to simulate a thunderstorm behind a window. Thus, the onus was on us to find a balance between <i>design feasibility </i> and <i> user believability </i>. Our guiding principles were engaging as many senses as possible, catering to diverse crowd size and age, playing off existing archetypes, complementing  the theme and storyline, running autonomously within a timing mechanism, and most importantly, having a high "WOW!" factor. 
+                         </p>
+
+                        <p class = "basketConceptText">
+                            We isolated three components to the window (aesthetic frame, thunder &amp; lightning, and rain &amp; wind) and then added the hand as an interactive element. For each component, we prototyped a robust electromechanical analogue and coordinated all of them using a Raspberry Pi microcontroller. More details about the design choices and fabrication methods can be found in the <a href="assemblyFolder/assembly.html"> Assembly </a> pages.
+                         </p>
+
+                        <h2 class = "subtitleOrange"> Looking Forward</h2>
+
+                        <p class = "basketConceptText">
+                            While everything worked as planned, there are some areas for improvement and troubleshooting:
+                        </p>
+                        <ul class = "basketConceptText">
+                                <li>
+                                    Layers of plastic film and parchment paper were used behind the window to diffuse light and provide the illusion of rain. While this worked well, we found that the sliding raintrack against the other layers produce static. Initially, this effect would help by keeping the layers flush against the window pane, but over time, it generated a large torque load on the stepper motor. Experimentation with other materials and spacing should be performed for the final solution.
+                                </li>
+                            
+                                <br>
+                                
+                                <li>
+                                    We implemented an ultrasonic sensor successfully but more user-testing is required to refine the actuation timing. For example, would it be more effective for the sensor to trigger when the users are close-by or when they begin to walk away? Also, we could only get our Maxbotix sensor to work with the Arduino, but it would be convenient to have all the systems communicating with the the Raspberry Pi. 
+                                </li>
+                            
+                            <br>
+                                
+                                <li>
+                                    Another concern is the alignment of the moving rain track, as it tended to slip left or right. We believe that fitting timing belts along the edges of the rain track will prevent lateral slippage while still maintaining the crinkling effect which is perceived as wind-flow.
+                                </li>
+                                
+                                
+                        </ul>
+
+                        </div>
+
+              
+                
+            </div>
+            
+        </div>
+    
+    </body>
+    
+    
+<!--    Lightbox	-->
+	<script src="js/lightbox-plus-jquery.js"></script>
+	
+    
+</html>

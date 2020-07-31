@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lightning Window: Storyboard</title>
+        <meta name="description">
+        
+        <link rel="stylesheet" href="../main.css" type="text/css">
+        
+        <link rel="stylesheet" href="../fonts.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- FLEXSLIDER EXTERNAL LINKS -->
+        <link rel="stylesheet" href="../flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="../js/jquery.flexslider.js"></script>
+        
+        <!-- JS for FLEXSLIDER -->
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {           
+                $('.flexslider').flexslider({
+                    start: function(slider){
+                        console.log(slider.currentSlide);
+                        audio = new Audio('sbAudio/thunderstorm.mp3'); 
+                        audio.play();
+                    },
+                    after: function(slider){
+                        audio.pause();
+                        console.log(slider.currentSlide);
+                        switch(slider.currentSlide) {
+                            case 0: audio = new Audio('sbAudio/thunderstorm.mp3');
+                                    audio.play(); break;
+                            case 1: audio = new Audio('sbAudio/lightbulb.mp3'); 
+                                    audio.play(); break;
+                            case 2: audio = new Audio('sbAudio/thunderstorm.mp3');
+                                    audio.play(); break;
+                            case 3: audio = new Audio('sbAudio/thunderstorm.mp3');
+                                    audio.play(); break;
+                        }
+                    }
+                });
+            });
+        </script>
+        
+        <script src = "../js/eyesMove.js"></script>
+       
+    </head>
+        
+    <header>
+        <div id = "superHeader">
+            <div class = "leftHeader">
+                <a href="../home.html">
+                <div class="eyesMove">
+                <img id = "eyes" src="../theme/TheJinkiesEyes2.png">
+                </div>
+				<img id="glasses" src="../theme/TheJinkiesWithoutEyes.png">
+                </a>
+            </div>
+            
+            <div class = "navTop">
+                    Thunderbolt and Lightning, Very, Very Frightening
+                </div>
+            
+            <div class = "rightHeader">
+                <div class = "navMenu">
+                    <a href="../home.html" > Home </a> 
+                </div>
+                
+                <div class = "navMenu">
+                    <a href="../sbFolder/lwSB.html" > <u> Storyboard </u> </a> 
+                </div> 
+                
+                <div class = "navMenu">
+                    <a href="../assemblyFolder/assembly.html" > Assembly </a>
+                </div>
+                
+                <div class = "navMenu">
+                    <a href="../logisticsFolder/logistics.html" > Logistics </a>
+                </div>
+            </div>        
+        </div>
+    </header>
+    
+    <section></section>
+
+    <body>
+        
+        <div class = "basket">
+            
+            <!-- Place somewhere in the <body> of your page -->
+                <div class="flexslider">
+                    <ul class="slides">
+                        <!--Storyboard Slide 1-->
+                        <li>
+                            <div class = "storyBoard">
+                                <h2 class = "storyTitle"> Setting the Scene (with sound) </h2>
+
+                                <img src = "sbImages/sb1_1.jpg">
+                                
+                            <div class = "sbContentHolder">
+                                <p class = "sbContent"> 
+                                <i>"Wow, this is cool!"</i> The guests enter the room. They hear lightning in the background. They begin to explore the environment. A Victorian setting with large paintings and tall bookcases sets the tone. 
+                                </p>
+                            </div>
+                            <!-- BREAK COPY THIS-->
+                            <br>
+                                
+                            </div>
+                        </li>
+                        <!--Storyboard Slide 3-->
+                        <li>
+                            <div class = "storyBoard">
+                                <h2 class = "storyTitle"> Lights Out! </h2>
+                                
+                                <img src = "sbImages/sb1_5.jpg">
+                                
+                                <div class = "sbContentHolder">
+                                <p class = "sbContent"> 
+                                 The chandelier begins to flicker. <i>"Uh oh!"</i> The lights go out...
+                                </p>
+                            </div>
+                            <!-- BREAK COPY THIS-->
+                            <br>
+
+                            </div>
+                        </li>
+                        <!--Storyboard Slide 4-->
+                        <li>
+                            <div class = "storyBoard">
+                                <h2 class = "storyTitle"> Lightning Strikes and Thunder Rolls </h2>
+                                
+                                <img src = "sbImages/sb1_6.gif">
+                                
+                                <div class = "sbContentHolder">
+                                <p class = "sbContent"> 
+                                 A dim light shines in the corner. Lightning illuminates the room through the large Victorian window.
+                                </p>
+                            </div>
+                            <!-- BREAK COPY THIS-->
+                            <br>
+
+                            </div>
+                        </li>
+                        <!--Storyboard Slide 5-->
+                        <li>
+                            <div class = "storyBoard">
+                                <h2 class = "storyTitle"> Clues! </h2>
+                                
+                                <img src = "sbImages/sb1_7.jpg">
+                                
+                                <div class = "sbContentHolder">
+                                <p class = "sbContent"> 
+                                 Clues for a game can also be revealed when the lightning flashes. They are hidden on objects all around the room. A large clue on the portrait can trigger the hunt.
+                                </p>
+                            </div>
+                            <!-- BREAK COPY THIS-->
+                            <br>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+            
+        </div>
+    
+    </body>
+
+</html>

@@ -1,0 +1,414 @@
+/*WELCOME PAGE HERE*/
+
+#eyesFull{
+    width: 38vw;
+    depth: 1;
+}
+
+#glassesFull{
+    width: 38vw;
+    padding-right: 1%;
+	position:absolute;
+	left:31.5vw;
+	top:6vh;
+	z-index:1;
+}
+.eyesMoveFull {
+	position:absolute;
+ 	z-index:-1;
+}
+
+
+/*WELCOME PAGE ENDS*/
+
+header{
+    margin: auto;
+    width: 80vw;
+}
+
+body{
+    margin: auto;
+    width: 80vw;
+    color: floralwhite;
+	text-align: justify;
+    text-justify: inter-word;
+}
+#logo{
+	width:50vw;
+}
+#name{
+    font-family: scoobydoo;
+    color: floralwhite;
+    text-align: center;
+}
+
+#superHeader{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.leftHeader{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+    float: left;
+    width: 17vw;
+    padding-top: 1vh;
+}
+
+#glasses{
+    width: 15vw;
+    padding-right: 0vw;
+}
+
+.eyesMove {
+    position:absolute;
+}
+
+#eyes{
+    width: 15vw;
+    depth: 1;
+    padding-top: 1vh;
+}
+
+.rightHeader{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 2.2vw;
+}
+
+.navTop{
+    line-height: auto;
+    font-family: "scoobyDoo";
+    display: inline-table;
+    vertical-align: middle;
+    color: black;
+    color: #FF5500;
+    padding-top: 2vw;
+    font-size: 2.7vw;
+}
+
+.navMenu{
+    line-height: auto;
+    font-family: "Kreon";
+    display: inline-table;
+    vertical-align: middle;
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+    padding-top: 1.5vh;
+    text-transform: lowercase;
+}
+
+.navMenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.navMenu a:hover{
+    color: #FF5500;
+}
+
+/*HEADER ABOVE THIS. SUBHEADER BELOW.*/
+
+.subheader{
+    font-family: 'Fjord One';
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.subheader a{
+    color: #FF5500;
+    text-decoration: none;
+}
+
+.subheader a:hover{
+    color: floralwhite;
+}
+
+.subheader b{
+	font-size: 1.8vw;
+    color: floralwhite;
+ }
+
+/*SUBHEADER ABOVE THIS. BODY BELOW.*/
+.COPY{
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.basket{
+    background: #000;
+    opacity: 0.95;
+    margin: auto;
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+}
+
+.center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#team{
+    width: 100%;
+    border-radius: 12px;
+}
+
+#team img{
+    border-radius: 12px;
+    width: 70%;
+	height: auto;
+    margin: auto;
+}
+
+/*half page*/
+.basketText{
+    font-family: 'Fjord One';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 100%;
+}
+
+.basketText p{
+    font-size: 100%; 
+    color: floralwhite;
+    width: 100%;
+    text-align:justify;
+}
+
+.basketText a{
+    color: #ffcc99;
+    text-decoration: none;
+}
+
+.basketConceptText{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    width:auto;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Kreon';
+}
+
+.basketConceptText ul{
+   font-style: normal;
+   color: floralwhite;
+    width: 100%;
+    height: 100%;
+}
+
+.basketConceptText p{
+    font-style: normal;
+    color: floralwhite;
+    width: 100%;
+    height: 100%;
+}
+
+.basketConceptText a{
+    color: #ffcc99;
+    text-decoration: none;
+}
+
+.basketConceptPics{
+    display:block;
+    vertical-align: middle;
+    line-height: normal;
+    width:auto;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.basketPic{
+/*    display:inline-block; */
+/*    vertical-align: middle;*/
+/*    line-height: normal;*/
+/*	padding-top:20px;*/
+/*    padding-bottom:20px;*/
+}
+
+.basketPic img{
+/*    border-radius: 12px;*/
+/*    width: 100%;*/
+/*	height: auto;*/
+}
+
+.basketPic2{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0%;
+    padding-top: 1%;
+}
+
+.basketPic2 img{
+    border-radius: 22px;
+    width: 90%;
+    max-height: 90%;
+}
+
+.basketVideo{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    max-width: 50vw;
+    height: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.basketVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.basketVideoHalf{
+    display:inline-block;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    width: 49%;
+    max-width: 600px;
+    height: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.basketVideoHalf iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.conceptPic{
+    display:inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+/*    padding: ;*/
+}
+
+.conceptPic img{
+    border-radius: 22px;
+    height: auto;
+    width: 100%;
+}
+
+.contentTitle{
+    font-family: Fjord One;
+    font-size: 100%; 
+    color: floralwhite;
+    text-align: left;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+.subtitleOrange, .subtitle{
+    font-family: Fjord One;
+    font-size: 150%;
+    color: #FF5500;
+    text-align: center;
+}
+/*Hovering effect*/
+
+.hoverIm img{
+-moz-transition:-moz-transform 0.2s ease-in; 
+-webkit-transition:-webkit-transform 0.2s ease-in; 
+-o-transition:-o-transform 0.2s ease-in;
+}
+.hoverIm img:hover{
+-moz-transform:scale(1.05); 
+-webkit-transform:scale(1.05);
+-o-transform:scale(1.05);
+}
+
+/*storyboard stuffs*/
+
+.storyBoard{
+    text-align: center;
+}
+
+.storyBoard img{
+    border-radius: 6px;
+    height: 75vh;
+    width: auto;
+    margin: auto;
+	max-height: 50vw;
+}
+
+.storyTitle{
+    font-family: 'Fjord One';
+    font-size: 2vw;
+    color: #FF5500;
+}
+
+.sbContentHolder{
+    display: inline-flex;
+    min-height: 5vh;
+    max-height: 50vh;
+    max-width: 60vw;    
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.sbContentHolder p{
+    line-height: normal;
+}
+
+.sbContent{
+    font-family: 'Fjord One';
+    font-size: 1.2vw;
+    color: floralwhite;
+    min-height: 60px;
+    height: auto;
+    margin: auto;
+}
+
+#nameNav{
+    padding-top: 10px;
+}
+
+/* pages*/
+
+.content{
+    font-family: 'Fjord One';
+    font-size: 100%; 
+    color: floralwhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content a{
+    color: #ffcc99;
+    text-decoration: none;
+}
+
+.content a:hover{
+    color: #ffa64d;
+}
+
+.emph{
+    font-size: 14px;
+}
+

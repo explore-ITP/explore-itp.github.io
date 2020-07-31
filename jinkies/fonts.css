@@ -1,0 +1,93 @@
+@font-face{
+    font-family: scoobyDoo;
+    src: url(theme/scoobydoo.ttf);
+}
+
+@font-face{
+    font-family: andika;
+    src: url(theme/AndikaNewBasic-R.ttf)
+}
+
+/*Helvetica Neue*/
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueUltraLight.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueUltraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueThin.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueThinItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeue.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueItalic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueMedium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueMediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueCondensedBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueCondensedBlack.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{ font-family: 'HelveticaNeue';
+    src: url(theme/HelveticaNeueBoldItalic.ttf)
+    font-weight: 800;
+    font-style: italic;
+}
+
+/*Google Fonts*/
+font-family: 'Fjord One', serif;
+/*just one style*/
+
+font-family: 'Kreon', serif; 
+/*has fontweight: 300,400,700*/
