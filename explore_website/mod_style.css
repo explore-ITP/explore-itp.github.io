@@ -1,7 +1,7 @@
 body {
   position: relative;
   background-color: #DDDDDD;
-  font-family: 'Libre_Basketville';
+  font-family: 'Libre_Baskerville';
   font-size: 1.2vw; 
   color: #555;
   margin: 0;
@@ -10,16 +10,14 @@ body {
 }
 
 h1 {
-  text-transform: uppercase;
-  font-family: 'Lato';
+  font-family: 'Libre_Baskerville';
+  color: lightgray;
   font-size: 1.7vw;
-  color: #002233;
 }
 
 h3 {
-  font-weight: lighter;
   font-family: 'Lato';
-  color: lightgray;
+  color: #002233;
 }
 
 .split {
@@ -43,22 +41,6 @@ h3 {
   }
 }
 
-nav.social {
-  display: inline-block;
-  padding: 0;
-  margin-bottom: 18px;
-}
-nav.social li {
-  list-style: none;
-  float: left;
-}
-nav.social li a {
-  padding: 5px;
-}
-nav.social li:first-child a {
-  padding-left: 0;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -67,12 +49,12 @@ nav.social li:first-child a {
 .container .inner {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
   padding: 20px 30px;
-  background-color: rgb(119,173,144,.75);
+  background-color: rgb(119,173,144,.5);
 }
 
 .comparison-slider-wrapper {
@@ -181,14 +163,14 @@ nav.social li:first-child a {
   background-color: #555;
 }
 
-.comparison-slider-wrapper .caption {
+/* .comparison-slider-wrapper .caption {
   position: relative;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   font-size: 12px;
   font-style: italic;
-}
+} */
 
 /* slidershow css to hold image comparison sliders */
 

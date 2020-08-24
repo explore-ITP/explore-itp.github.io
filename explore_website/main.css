@@ -47,9 +47,6 @@ header{
     font-weight: 800;
     font-size: 3vw;
     color: lightgray;
-    
-    
-
 }
 
 .main-border-background{
@@ -79,8 +76,6 @@ body {
     color: lightgray;
     text-align: justify;
     text-justify: inter-word;
-
-
 }
 
 #superHeader{
@@ -95,17 +90,6 @@ body {
     font-size: 1.5vw;
 }
 
-/* unused 
-.navTop{
-    line-height: auto;
-    display: inline-table;
-    vertical-align: middle;
-    color:#002233;
-    padding-top: 2vw;
-    font-size: 2.7vw;
-}
-*/
-
 .p_text {
     font-family: "Libre_Baskerville"; 
     font-weight: lighter;
@@ -115,9 +99,6 @@ body {
 
 .navMenu{
     line-height: auto;
-    /* font-family: "Lato";
-    font-weight: 600;
-    font-size: 1.5vw; */
     display: inline-table;
     vertical-align: middle;
     padding-right: 2vw;
@@ -134,13 +115,11 @@ body {
 
 .navMenu a:hover{
     color: whitesmoke;
-    /* font-weight: bolder; */
-    
 }
 
 
 /* BODY */
-/* colors chosen from itp profiler image, from background */
+/* colors chosen from itp profiler image & background image */
 
 .center{
     text-align: center;
@@ -235,7 +214,7 @@ body {
   }
   
   /* Add an active class to highlight the current page */
-  .active {
+  .on {
     background-color:rgb(119,173,144);
     
   }
@@ -285,13 +264,13 @@ body {
     text-align: left;
   }
   
-  /* Add a dark background on topnav links and the dropdown button on hover */
+  /* Add a less transparent background on topnav links and the dropdown button on hover */
   .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(119,173,144,.7);
     color: whitesmoke;
   }
   
-  /* Add a grey background to dropdown links on hover */
+  /* Add a less transparent background to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: rgb(119,173,144,.7);
     color: whitesmoke;

@@ -10,12 +10,12 @@ body {
     display: inline;
     margin: 10px;
     padding: 20px;
-    max-width: 50%;
+    max-width: 70%;
     position: relative;
 } 
 
 #tabs {
-  width: 1000px;
+  width: 80vw;
   display: flex;
   position: relative;
   margin: 0 auto;
@@ -61,7 +61,7 @@ ul li:nth-child(1) a {
 }
 
 ul li a.active {
-  opacity: .5;
+  opacity: 1;
 }
 
 .para-a {
@@ -81,65 +81,24 @@ ul li a.active {
   width: 100%;
 }
 
-.icon {
-  position: relative;
+.feature {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #c7c7c7;
-  border-radius: 100%;
-  vertical-align: middle;
-}
-
-.block {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  border: solid 2px #7b7b7b;
-  border-radius: 5px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.circle {
-  position: absolute;
-  padding: 2px;
-  border: solid 2px #7b7b7b;
-  border-radius: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.title {
-  display: inline-block;
-  text-transform: uppercase;
   font-family: 'Lato';
   font-weight: bolder;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   padding: 0 10px;
   vertical-align: middle;
-  color: lightgray;
+  color: #002233;
 }
 
 .addon {
   position: relative;
-  width: 80%;
+  width: 100%;
   top: -25px;
-  margin-left: 70px;
+  padding: 10px 10px;
   letter-spacing: 0;
   font-size: 13px;
-  color: #002233;
+  color: whitesmoke;
   opacity: 0;
   font-family: 'Libre_Baskerville';
   font-weight: bolder;
@@ -169,13 +128,13 @@ ul li a.active {
 }
 
 #tabs-1 {
-  background: #9b9b9b;
+  background:none;
 }
 
 #tabs-2 {
-  background: #c9c9c9;
+  background:none;
 }
 
 #tabs-3 {
-  background: #1b1b1b;
+  background:none;
 }
