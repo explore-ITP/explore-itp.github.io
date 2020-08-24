@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## welcome to our repo
 
-You can use the [editor on GitHub](https://github.com/explore-ITP/explore-itp.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Because of COVID-19, Duke Keep Exploring reached out to alumni to create projects for students whose summer opportunities were displaced. This work is a direct consequence of that pairing. The team members are:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Eeshan Bhatt - PhD Candidate at MIT-WHOI Joint Program  - Duke BSE '15
+2. Lara Breitkreutz - data story intern - Environmental Science w/ certificate in Documentary Studies BS '20
+3. Alexandra Rivera - data science intern - Civil and Environmental Engineering anticipated BSE '23
 
-### Markdown
+## how to use this repo
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## about the data
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/explore-ITP/explore-itp.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We focused on the WHOI Ice Tethered Profiler (ITP) dataset...
