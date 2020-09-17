@@ -16,7 +16,7 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-/* .container {
+.container {
 	position: relative;
 	width: 80%;
   margin: 50px 0;
@@ -25,14 +25,12 @@
   .inner {
 		position: relative;
 		width: 100%;
-		/* max-width: $maxWidth; */
-		/* margin: 0 auto;
+		margin: 0 auto;
 		overflow: hidden;
 		box-sizing: border-box;
 		padding: 20px 30px;
 		background-color: #EEE;
-	} */ */
-
+	}
 
 /* Our image information */
 .before,
@@ -107,7 +105,6 @@
   bottom:100%;
 }
 
-/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
 .scroller{
   border: 5px solid #fff;
 }
@@ -115,16 +112,6 @@
 .scroller:after{
   background: #fff;
 }
-
-/* new, trying to embed maps */
-
-/* .main {
-  display: inline-block;
-  width: 75%;
-  vertical-align: top;
-  height: 100%;
-  padding: 30px;
-} */
 
 /* slidershow to contain image sliders */
 

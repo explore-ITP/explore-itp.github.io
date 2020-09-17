@@ -15,7 +15,34 @@
         <div class = "subtitle">In  collaboration with Woods Hole Oceanographic Institute
         <p class ="second-subtitle"> & Duke University <i>Keep Exploring</i> Initiative</p>
         </div>
-    </div>
+    </div>   
+    
+        <!-- old nav menu 
+    <div class="main-border-background">  
+        <div class = "navHeader">
+            
+            <div class = "navMenu">
+                <a href="home.html" > <u> Home </u> </a> 
+            </div>
+            
+            <div class = "navMenu">
+                <a href="page_two.html" > Explore through Time (1) </a> 
+            </div> 
+
+            <div class = "navMenu">
+                <a href="page_three_one.html" > Explore through Time (2) </a>
+            </div>
+            
+            <div class = "navMenu">
+                <a href="page_three_two.html" > Explore by Track </a>
+            </div>
+            
+            <div class = "navMenu">
+                <a href="page_four.html" > More Information </a>
+            </div>
+        </div>
+    </div>   
+    -->
 
 <div class="topnav" id="myTopnav">
     <a href="home.html" class="active">Home</a>
