@@ -1,0 +1,4 @@
+2012,61.50144,-140.8125,84.2146,2
+%pressure(dbar),temperature(C),salinity,dissolved_oxygen,nobs,CDOM(ppb),PAR(uE/m^2/s),turbidity(/m/sr)x10^4,chlorophyll-a(ug/l)
+5.8,-1.6482,30.1154,382.6412,91,NaN,NaN,NaN,NaN
+8.7,-1.6482,30.1151,361.2286,89,NaN,NaN,NaN,NaN
