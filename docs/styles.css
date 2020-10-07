@@ -1,0 +1,441 @@
+/* formatting */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Master Styles */
+
+/* we can take out background transition if desired */
+body {
+    
+    background: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2048x1152/4ea649b16731f346e7f5f6657040a2e0/photo-1449709992276-24bbca940809.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    padding: 25px 0 25px;
+}
+
+/* -webkit-transition: all 1s ease 0s;
+    transition: all 0.4s ease 0s;
+    padding: 25px 0 600px;
+     */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.heading {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.heading h1 {
+    font-family: "Raleway";
+    font-size: 2.5em;
+    font-weight: 100;
+    color: whitesmoke;
+    display: inline;
+}
+
+.heading h2 {
+    font-family: 'Lato';
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgb(119,173,144,.5);
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: lowercase;
+    font-family: "Raleway";
+    margin-right: 40px;   
+}
+
+.nav-wrapper > .right-side > div {
+    font-size: 0.9em;
+    text-transform: lowercase;
+    font-family: "Raleway";
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-box 0.5s;
+}
+
+.nav-wrapper a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #002233;
+}
+
+.nav-link-wrapper a:hover {
+    color: #002233;
+
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #002233;
+}
+
+.active-nav-link a {
+    color: #002233 !important;
+
+}
+
+/* Story Styles */
+
+.wrapper {
+    display: flex;
+    margin: auto;
+}
+
+.content-wrapper {
+    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+.side-wrapper {
+    text-align: center;
+    max-width: 23%;
+    float: left;
+    margin: auto;
+}
+
+.textwrap {
+    width: 75%;
+    float: right;
+    margin: 10px;
+    padding: 30px;
+    
+}
+
+.boxwrap {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+
+.boxwrap img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%) blur(4px);
+    overflow: hidden;
+
+}
+
+.nohoverwrap {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    object-fit: contain;
+
+}
+
+.nohoverwrap img {
+    padding: 5px;
+    max-width: 100%;
+}
+
+/* image caption, on hover */
+.caption{
+    text-align: center;
+    font-family: "Lato";
+    color: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    text-align: left;
+    opacity: 0;
+}
+
+.nohoverwrap:hover .caption{
+    opacity: 1;
+    transition: .5s;
+}
+
+/* Centered text */
+#toptext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: whitesmoke;
+    filter: brightness(100%) blur(0px);
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+}
+
+
+h3 {
+    margin: 10px;
+    color:whitesmoke;
+    font-family: "Raleway";
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.subtitle {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    color:whitesmoke;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+/* hover component, needs to be specific with component */
+
+.story-text h3:hover {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #002233;
+    transition: 0.5s
+}
+
+.boxwrap img:hover {
+    transition: 0.5s;
+    filter: brightness(100%) blur(0);
+    color: none;
+}
+
+.boxwrap img:hover + #toptext {
+    transition: 0.5s;
+    opacity: 0
+}
+
+/* Button */
+/* Answer on click! */
+#myANSWER1 {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(119,173,144,.5);
+
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+  }
+
+#myANSWER2 {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(119,173,144,.5);
+    max-width: 50%;
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+  }
+
+#myANSWER3 {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(119,173,144,.5);
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+  }
+
+#myANSWER4 {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(119,173,144,.5);
+    max-width: 45%;
+    float: right;
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+  }
+
+.button:hover {
+    background-color: rgb(119,173,144,0);
+    border: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+    font-style: italic;
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.button {
+    background-color: rgb(119,173,144,0);
+    border: none;
+    display: inline;
+    margin: 5px;
+    color:whitesmoke;
+    font-family: "Lato";
+    font-size: 1.2em;
+    
+}
+
+.initiallyHidden { display: none; }
+
+button:focus {outline:0;}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: top;
+    margin-right: 0%;
+    height: 20vh;
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+.sidebar img1{
+    height: 400px;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+/* sidebar caption, hover */
+.sidebar-caption{
+    max-width: 90%;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-family: "Lato";
+    color: whitesmoke;
+    opacity: 0.0;
+
+}
+
+.sidebar:hover .sidebar-caption {
+    opacity: 1;
+    transition: .5s;
+}
+
+/* About Page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+.profile-image-wrapper {
+    padding: 20px;
+    margin: auto;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.profile-content-wrapper {
+    padding: 20px;
+    background-color: rgb(119,173,144,.5);
+    margin: auto;
+}
+
+.profile-content-wrapper h2 {
+    color: whitesmoke;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.profile-content-wrapper p {
+    color: whitesmoke;
+    font-family: "Lato";
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+
+/* Border design, about page */
+
+#box {
+    background:
+        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 10px, transparent 10px),
+        linear-gradient(to left, #b5d393, #b5d393 10px, transparent 10px),
+        linear-gradient(to top,#002233, #002233 10px, transparent 10px),
+        linear-gradient(to right, #002233, #002233 10px, transparent 10px);
+    background-origin: border-box;
+    background-color: rgb(119,173,144,.5);
+  }
+
+#box2 {
+    background:
+        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 5px, transparent 5px),
+        linear-gradient(to left, #b5d393, #b5d393 5px, transparent 5px),
+        linear-gradient(to top,#002233, #002233 5px, transparent 5px),
+        linear-gradient(to right, #002233, #002233 5px, transparent 5px);
+    background-origin: border-box;
+    background-color: rgb(119,173,144,.5);
+  }
+
+#box3 {
+    background:
+        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 2px, transparent 2px),
+        linear-gradient(to left, #b5d393, #b5d393 2px, transparent 2px),
+        linear-gradient(to top,#002233, #002233 2px, transparent 2px),
+        linear-gradient(to right, #002233, #002233 2px, transparent 2px);
+    background-origin: border-box;
+    background-color: rgb(119,173,144,0);
+  }
+

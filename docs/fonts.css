@@ -1,52 +1,20 @@
-/* in use */
 
+/* paragraphs */
 @font-face{
-    font-family: 'Libre_Baskerville';
-    src: url(theme/Libre_Baskerville/LibreBaskerville-Bold.ttf);
-    src: url(theme/Libre_Baskerville/LibreBaskerville-Regular.ttf);
-    /* src: url(theme/Libre_Baskerville/LibreBaskerville-Italic.ttf); */
+    font-family: 'Raleway';
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
-
-@font-face{
-    font-family: 'Lato';
-    src: url(theme/Lato/Lato-Black.ttf);
-    src: url(theme/Lato/Lato-BlackItalic.ttf);
-    src: url(theme/Lato/Lato-Bold.ttf);
-    src: url(theme/Lato/Lato-Regular.ttf);
-}
-
-/* not in use */
-@font-face{
-    font-family: 'Hattori-Hanzo';
-    src: url(theme/Hattori-Hanzo/Hattori_Hanzo.otf);
-}
-
-@font-face{
-    font-family: 'Spectral';
-    src: url(theme/Spectral/Spectral-ExtraBold.ttf);
-    src: url(theme/Spectral/Spectral-Bold.ttf);
-    src: url(theme/Spectral/Spectral-Medium.ttf);
-    src: url(theme/Spectral/Spectral-MediumItalic.ttf);
-}
-
-@font-face{
-    font-family: 'Rubik';
-    src: url(theme/Rubik/Rubik/Rubik-Medium.ttf);
-}
-
-@font-face{
-    font-family: 'Playfair Display';
-    src: url(theme/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-    src: url(theme/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
-
-@font-face{
-    font-family: 'News_Cycle';
-    src: url(theme/Montserrat,News_Cycle,Roboto/News_Cycle/NewsCycle-Bold.ttf);
-    src: url(theme/Montserrat,News_Cycle,Roboto/News_Cycle/NewsCycle-Regular.ttf);
-}
-
 @font-face{
     font-family: 'Roboto';
-    src: url(theme/Montserrat,News_Cycle,Roboto/Roboto/Roboto-Regular.ttf);
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+/* headings */
+@font-face{
+    font-family: 'Domino';
+    src: url(fonts/Domine/Domine-VariableFont_wght.ttf)
+}
+@font-face{
+    font-family: 'Lato';
+    src: url(fonts/Lato/Lato-Regular.ttf);
 }
