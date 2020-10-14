@@ -210,6 +210,7 @@ p {
     color:whitesmoke;
     font-family: "Lato";
     font-size: 1.1em;
+    text-align: left;
 }
 
 
@@ -357,6 +358,7 @@ button:focus {outline:0;}
     font-family: "Lato";
     color: whitesmoke;
     opacity: 0.0;
+    text-align: left;
 
 }
 
@@ -439,3 +441,25 @@ button:focus {outline:0;}
     background-color: rgb(119,173,144,0);
   }
 
+/* Styling hyperlinks */
+
+a.external {
+    font-family: "Lato";
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    float: right;
+  }
+  
+  a.external:hover {
+    text-decoration: none;
+  }
+  
+  a.external:active {
+    text-decoration: none;
+  }
+  
+  a.external:visited {
+    text-decoration: none;
+  }
