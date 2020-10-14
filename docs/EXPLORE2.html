@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='UTF-8'>
-  <title>Explore by Depth</title>
+  <title>Explore by Movement</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="fonts.css" type="text/css">
 
@@ -12,12 +12,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="explore.js" type="text/javascript"></script>
-
 </head>
 
 <header>
-
-
 <div class="container">
   <div class="heading">
     <h1>ARCTIC OCEAN DATA: EXPLORE WITH US</h1>
@@ -44,19 +41,22 @@
             </div>
         </div>
     </div>
+</div>
 </header>
 
 
 <body>
-    <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
+  <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
     <div class="explore-wrapper" style="width: 80%; margin: auto;">
       <div class="vis-wrapper">
-        <div class="subtitle">Drift Tracks: Movement of ITPs</div>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-          </p>
+        <div class="subtitle">Drift Tracks: ITP Movement</div>
+        <p>The visualizations to the right show ITP movement over time, otherwise known as the profiler’s drift track. Each map contains the full tracks of three ITP machines that were active during similar periods of time - early, middle, and late deployments correlate to the years 2005-2009, 2010-2013, and 2014-2017 respectively. </p>
+        <p>Notice the shape of ITP Machine 1 - it’s circular motion seems to match the shape of the Gyre. This could suggest that the ice floe was confined within the Gyre’s circular current.</p>
+        <p>Questions for thought:</p>
+        <p>What patterns do you observe in the other tracks? What could be causing the observed variations in shape and length? What are some potential reasons that the tracks from ITP machines 91 and 92 are discontinuous? What concluding thoughts or questions do you have about what may drive drift track movement?</p>
+        <p>Recreate this visualization and make it interactive. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Movement Visualizations</i>.</p>
       </div>
-      <div class="vis-wrapper">
+      <div class="vis-wrapper" style="margin-bottom: 20px;">
                 <img class="mySlides" src="media/vis_3and4/track1.png" style="width:100%">
                 <img class="mySlides" src="media/vis_3and4/track2.png" style="width:100%">
                 <img class="mySlides" src="media/vis_3and4/track3.png" style="width:100%">
@@ -64,25 +64,22 @@
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+    </div>
+  </div>
+  <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="explore-wrapper2" style="width: 80%; margin: auto;">
       <div class="vis-wrapper">
-                <img class="mySlides2" src="media/vis_3and4/temp.png" style="width:100%">          
+                <img class="mySlides2" src="media/vis_3and4/drifttrack hm.png" style="width:100%">          
       </div>
       <div class="vis-wrapper">
         <div class="subtitle">ITP Location Density</div>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-          </p>
+        <p>Each data for a geographic coordinate pair from every ITP machine is plotted on a grid with axes that represent the approximate geographic coordinates of the Arctic circle - longitude along the x-axis and latitude along the y-axis.* This graph shows the collective location density of ITPs in the Arctic Ocean as they moved. For reference, the Beaufort Gyre exists within the approximate range of 70°N to 85°N latitude and 120°E and 160°E longitude. The color bar is a density gradient corresponding to the number of data points.</p>
+        <p>Questions for thought:</p>
+        <p>What overall range do you observe? Where do you observe the highest density, and why? What is responsible for the vast spaces of no data?</p>
+        <p>Recreate this visualization and get creative with the colormap possibilities. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Movement Visualizations</i>.</p>
+        <p style="opacity: 50%; font-style: italic;">*The grid is uniform; latitude and longitude are not properly projected and the appearance is therefore skewed.</p>
       </div>
-      <div class="vis-wrapper">
-      <div class="subtitle">Watch an ITP move through time</div>
-        <p style="float: right;">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-          </p>
         </div>
-        <div class="vis-wrapper">
-          <img>
-        </div>
-
       </div>
     </div>
 
