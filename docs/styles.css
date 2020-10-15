@@ -463,3 +463,16 @@ a.external {
   a.external:visited {
     text-decoration: none;
   }
+
+  /* Unused html for explore2.html
+
+  <div class="vis-wrapper">
+      <div class="subtitle">Watch an ITP move through time</div>
+        <p style="float: right; margin-top: 50px;">Produced with ArcGIS software, this animation shows the drift track of ITP 25, represented by the green marker, as it passively moves through the Arctic Ocean. Notice the inconsistency in speed as the marker slows down and speeds up.</p>
+        </div>
+          <video class="vis-wrapper" style="max-width:100%; outline: none;" controls>
+            <source src="media/vis_3and4/itp movement.mp4" type="video/mp4">
+          </video>
+
+*/
+
