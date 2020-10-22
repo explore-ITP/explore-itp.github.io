@@ -13,7 +13,7 @@ body {
 }
 
 .explore-wrapper2 {
-  width: 70%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   margin: auto;
