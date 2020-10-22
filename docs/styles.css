@@ -13,17 +13,11 @@
 /* we can take out background transition if desired */
 body {
     
-    background: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2048x1152/4ea649b16731f346e7f5f6657040a2e0/photo-1449709992276-24bbca940809.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: #002233;
     top:0px;
     left:0px;
     width: 100%;
     height: 100%;
-    padding: 25px 0 25px;
 }
 
 /* -webkit-transition: all 1s ease 0s;
@@ -34,21 +28,30 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    background: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2048x1152/4ea649b16731f346e7f5f6657040a2e0/photo-1449709992276-24bbca940809.jpg);
+    background-size: cover;
 }
 
 .heading {
     display: block;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
-    padding: 10px;
+    height: 400px;
+    padding: 150px 0;
+}
+
+.subheading {
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    padding: 75px 0;
 }
 
 .heading h1 {
     font-family: "Raleway";
-    font-size: 2.5em;
-    font-weight: 100;
+    font-size: 3.5em;
+    font-weight: bold;
     color: whitesmoke;
     display: inline;
 }
@@ -59,19 +62,34 @@ body {
     color: whitesmoke;
 }
 
+.subheading h1 {
+    font-family: "Raleway";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: whitesmoke;
+    display: inline;
+}
+
+.subheading h2 {
+    font-family: 'Lato';
+    font-size: 1em;
+    color: whitesmoke;
+}
+
 /* Nav Styles */
-.nav-wrapper {
+#navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: rgb(119,173,144,.5);
+    background: rgb(119,173,144,1);
+    z-index: 1;
 }
 
 .left-side {
     display: flex;
 }
 
-.nav-wrapper > .left-side > div {
+#navbar > .left-side > div {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: lowercase;
@@ -79,7 +97,7 @@ body {
     margin-right: 40px;   
 }
 
-.nav-wrapper > .right-side > div {
+#navbar > .right-side > div {
     font-size: 0.9em;
     text-transform: lowercase;
     font-family: "Raleway";
@@ -91,7 +109,7 @@ body {
     transition: border-box 0.5s;
 }
 
-.nav-wrapper a {
+#navbar a {
     color: whitesmoke;
     text-decoration: none;
     transition: color 0.5s;
@@ -118,28 +136,14 @@ body {
 
 /* Story Styles */
 
-.wrapper {
-    display: flex;
-    margin: auto;
-}
-
 .content-wrapper {
-    margin-top: 30px;
-    text-align: center;
-    width: 80%;
-}
-
-.side-wrapper {
-    text-align: center;
-    max-width: 23%;
-    float: left;
     margin: auto;
+    text-align: center;
 }
 
 .textwrap {
-    width: 75%;
-    float: right;
-    margin: 10px;
+    width: 70%;
+    margin: auto;
     padding: 30px;
     
 }
@@ -147,8 +151,9 @@ body {
 .boxwrap {
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 100%;
     padding: 10px;
+    z-index: 0;
 }
 
 .boxwrap img {
@@ -213,15 +218,6 @@ p {
     text-align: left;
 }
 
-
-h3 {
-    margin: 10px;
-    color:whitesmoke;
-    font-family: "Raleway";
-    font-size: 1.2em;
-    font-style: italic;
-}
-
 .subtitle {
     max-width: 100%;
     margin: 10px;
@@ -229,6 +225,18 @@ h3 {
     color:whitesmoke;
     font-family: "Raleway";
     text-transform: uppercase;
+    text-align: left;
+    font-weight: 100;
+    font-size: 1.7em;
+}
+
+.question {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    color:whitesmoke;
+    font-family: "Raleway";
+    text-align: left;
     font-weight: 100;
     font-size: 1.5em;
 }
@@ -322,50 +330,18 @@ h3 {
 
 button:focus {outline:0;}
 
-/* Sidebar */
-.sidebar {
-    width: 20%;
-    float: right;
-    padding-left: 50px;
-    padding-right: 50px;
-    vertical-align: top;
-    margin-right: 0%;
-    height: 20vh;
-}
-
-.sidebar {
-    position: -webkit-sticky;
-    position: sticky;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
     top: 0;
+    width: 100%;
   }
 
-.sidebar img1{
-    height: 400px;
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content-wrapper {
+    padding-top: 200px;
+  }
 
-
-/* sidebar caption, hover */
-.sidebar-caption{
-    max-width: 90%;
-    display: block;
-    padding: 5px;
-    text-align: center;
-    font-family: "Lato";
-    color: whitesmoke;
-    opacity: 0.0;
-    text-align: left;
-
-}
-
-.sidebar:hover .sidebar-caption {
-    opacity: 1;
-    transition: .5s;
-}
 
 /* About Page */
 .two-column-wrapper {
@@ -387,8 +363,7 @@ button:focus {outline:0;}
 }
 
 .profile-content-wrapper {
-    padding: 20px;
-    background-color: rgb(119,173,144,.5);
+    padding: 30px;
     margin: auto;
 }
 
@@ -396,6 +371,7 @@ button:focus {outline:0;}
     color: whitesmoke;
     font-family: "Raleway";
     text-transform: uppercase;
+    text-align: left;
     font-weight: 100;
     font-size: 1.5em;
     padding: 10px;
@@ -413,16 +389,6 @@ button:focus {outline:0;}
 
 #box {
     background:
-        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 10px, transparent 10px),
-        linear-gradient(to left, #b5d393, #b5d393 10px, transparent 10px),
-        linear-gradient(to top,#002233, #002233 10px, transparent 10px),
-        linear-gradient(to right, #002233, #002233 10px, transparent 10px);
-    background-origin: border-box;
-    background-color: rgb(119,173,144,.5);
-  }
-
-#box2 {
-    background:
         linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 5px, transparent 5px),
         linear-gradient(to left, #b5d393, #b5d393 5px, transparent 5px),
         linear-gradient(to top,#002233, #002233 5px, transparent 5px),
@@ -431,48 +397,39 @@ button:focus {outline:0;}
     background-color: rgb(119,173,144,.5);
   }
 
-#box3 {
-    background:
-        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 2px, transparent 2px),
-        linear-gradient(to left, #b5d393, #b5d393 2px, transparent 2px),
-        linear-gradient(to top,#002233, #002233 2px, transparent 2px),
-        linear-gradient(to right, #002233, #002233 2px, transparent 2px);
-    background-origin: border-box;
-    background-color: rgb(119,173,144,0);
-  }
+/* Resources page */
 
-/* Styling hyperlinks */
-
-a.external {
+.external {
     font-family: "Lato";
     color: whitesmoke;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
     float: right;
-  }
-  
-  a.external:hover {
     text-decoration: none;
-  }
-  
-  a.external:active {
-    text-decoration: none;
-  }
-  
-  a.external:visited {
-    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
   }
 
-  /* Unused html for explore2.html
+.res-wrapper-large {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
+  }
 
-  <div class="vis-wrapper">
-      <div class="subtitle">Watch an ITP move through time</div>
-        <p style="float: right; margin-top: 50px;">Produced with ArcGIS software, this animation shows the drift track of ITP 25, represented by the green marker, as it passively moves through the Arctic Ocean. Notice the inconsistency in speed as the marker slows down and speeds up.</p>
-        </div>
-          <video class="vis-wrapper" style="max-width:100%; outline: none;" controls>
-            <source src="media/vis_3and4/itp movement.mp4" type="video/mp4">
-          </video>
-
-*/
+.res-wrapper {
+    padding: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+.ref-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin-top: 30px;
+    height: auto;
+    overflow: hidden;
+  }
 

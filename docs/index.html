@@ -15,7 +15,8 @@
     <h1>ARCTIC OCEAN DATA: EXPLORE WITH US</h1>
     <h2>In Collaboration with Duke Keep Exploring Initiative & Woods Hole Oceanographic Institute</h2>
   </div>
-    <div class="nav-wrapper">
+  
+    <div id="navbar">
       <div class="left-side">
         <div class="nav-link-wrapper active-nav-link">
           <a href="index.html">Home</a>
@@ -40,12 +41,13 @@
 </header>
 
 <body>
-  <div class="wrapper">
     <div class="content-wrapper">
-      <div id="box" class="textwrap">
+      <div class="textwrap">
+        <h2 class="subtitle"> Explore the Data with our Notebooks </h2>
+        <p>Navigate by using the panel located at the top of the page. Follow along with us as we visualize and interpret the data under the explore tabs. You can also meet the team, or locate the data notebook in resources and conduct your own exploration.</p>
       <h2 class="subtitle">Geographic Context</h2>
         <p>The Arctic Ocean is a mystery. Located on the North Pole, what we claim to know about this elusive body of water is based on a sparse amount of knowledge due to its remoteness and hostile climate. Within the Arctic Ocean lies the Beaufort Gyre, an ice and water circulation pattern that moves in a clockwise direction. As it spins, the gyre accumulates fresh water that enters the Ocean from melting sea ice and glaciers, along with river runoff from nearby land masses of North America and Asia. This naturally occurring cycle affects the properties of the Ocean.</p>  
-        <p>Which ocean properties could this affect, and how?</p>
+        <p class="question">Which ocean properties could this affect, and how?</p>
                   
         <p>Previous scientists have shown us that the air, the ice, and the oceans are interconnected. And in the age of climate change, understanding the Ocean is important in developing our responses to a changing climate.</p>            
                   <div class="boxwrap" style="float: right;">
@@ -57,71 +59,40 @@
 
         <p>The system’s top portion sits on the surface of the ice, and a long wire rope extends through the ice, down into the water, and through the water column. The component that actually conducts the sampling moves up and down along the wire, collecting measurements. This data is then sent in real-time to WHOI via a satellite link, now accessible for exploration and analysis.</p>
         
-        <p>What could they be collecting? Hover over the ITP to the right to find out.</p>
+        <p class="question">What could they be collecting?</p>
                        
         <p>Since the first deployments in the early 2000s, a large amount of data has been collected. This data spans the thousands of observations each of over 100 machines, and many are still out on the ice, actively collecting information. This database is growing continuously, and along with it is our understanding of the Arctic Ocean and its secrets.</p>         
                     <div class="nohoverwrap" style="float: left">
-                      <img src="media/deployment.png" id="box2">
+                      <img src="media/deployment.png" id="box">
                       <div class="caption">With the aid of a tripod, the subsurface portion is deployed through the hole in the ice.</div>
                     </div>
-
-                      <h2 class="subtitle"> We Invite you to Explore </h2>
-
-                      <p>Navigate by using the panel located at the top of the page. Follow along with us as we visualize and interpret the data under the explore tabs. You can also meet the team, or locate the data notebook in resources and conduct your own exploration.</p>
                     
                     <div class="nohoverwrap" style="float: right;">
-                    <img src="media/fromboat.png" id="box2">
+                    <img src="media/fromboat.png" id="box">
                     <div class="caption">View from a ship heading towards the ice floe for a deployment.</div>
                   </div>
 
 </div>
   </div>
-    <div class="sidebar makemesticky">
-      <div id="img1" >
-          <img src="media/itp_cutout.png" />
-          <p class="sidebar-caption">The ITP collects depth, temperature, and salinity measurements as it moves up and down in the water.</p>
-      </div>
-  </div>
-  </div>
 
     <script>
-      function myFunction1() {
-        var x = document.getElementById("myANSWER1");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-      function myFunction2() {
-        var x = document.getElementById("myANSWER2");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-      function myFunction3() {
-        var x = document.getElementById("myANSWER3");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-      function myFunction4() {
-        var x = document.getElementById("myANSWER4");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-    </script>
-                
+ // When the user scrolls the page, execute myFunction
+ window.onscroll = function() {myFunction()};
+ 
+ // Get the navbar
+ var navbar = document.getElementById("navbar");
+ 
+ // Get the offset position of the navbar
+ var sticky = navbar.offsetTop;
+ 
+ // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+ function myFunction() {
+   if (window.pageYOffset >= sticky) {
+     navbar.classList.add("sticky")
+   } else {
+     navbar.classList.remove("sticky");
+   }
+ }
+</script>
 
 </body>

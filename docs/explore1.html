@@ -16,11 +16,11 @@
 
 <header>
 <div class="container">
-  <div class="heading">
+  <div class="subheading">
     <h1>ARCTIC OCEAN DATA: EXPLORE WITH US</h1>
     <h2>In Collaboration with Duke Keep Exploring Initiative & Woods Hole Oceanographic Institute</h2>
   </div>
-    <div class="nav-wrapper">
+    <div id="navbar">
       <div class="left-side">
         <div class="nav-link-wrapper">
           <a href="index.html">Home</a>
@@ -46,67 +46,67 @@
 
 
 <body>
-    <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="explore-wrapper3" style="width: 80%; margin: auto;">
-      <div class="vis-wrapper">
-        <img class="mySlides" src="media/vis_1and2/temp 1.png" style="width:100%">
-        <img class="mySlides" src="media/vis_1and2/temp 2.png" style="width:100%">
-        <img class="mySlides" src="media/vis_1and2/temp 3.png" style="width:100%">
+
+  <div class="content-wrapper">
+    <div class="explore-wrapper">
+    <div class="vis-wrapper">
+      <div class="subtitle">Changes in Temperature & Salinity with Depth</div>
+        <img class="mySlides" src="media/vis_1and2/temp 1.png" style="width: 100%;">
+        <img class="mySlides" src="media/vis_1and2/temp 2.png" style="width: 100%;">
+        <img class="mySlides" src="media/vis_1and2/temp 3.png" style="width: 100%;">
 
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-      <div class="vis-wrapper">
-        <img class="mySlides2" src="media/vis_1and2/sals 1.png" style="width:100%">
-        <img class="mySlides2" src="media/vis_1and2/sals 2.png" style="width:100%">
-        <img class="mySlides2" src="media/vis_1and2/sals 3.png" style="width:100%">
+    
+    
+        <img class="mySlides2" src="media/vis_1and2/sals 1.png" style="width: 100%;">
+        <img class="mySlides2" src="media/vis_1and2/sals 2.png" style="width: 100%;">
+        <img class="mySlides2" src="media/vis_1and2/sals 3.png" style="width: 100%;">
 
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
       </div>
-
-
       <div class="vis-wrapper">
-        <div class="subtitle">Changes in Temperature & Salinity with Depth</div>
         <p>The set of visualizations above show changes in temperature with pressure followed by changes in salinity with pressure. Pressure is closely correlated with depth and thus the terms are interchangeable in this context. Pressure is measured in decibars (dbar), temperature is measured in degrees Celsius (°C), and salinity is measured in practical salinity units (psu). The colors represent intervals of time. Winter: Dark Blue, Spring: Green, Summer: Pink, and Fall: Light Blue. With the same y-axis and color usage, the graphs above are easily comparable.</p>
         <p>Notice how pressure changes on the y-axis. It may seem weird that the numbers become smaller further away from the origin. The top of the graph corresponds to the surface of the ocean, and therefore dbar equals 0 and increases moving towards the origin.</p>
+      </div>
+    </div>
+      <div class="text-wrapper">
         <p>Questions for thought:</p>
         <p>What changes or patterns do you observe throughout the water column? Between seasons? What range of temperature do you observe? Salinity? How could you interpret the steep drop-off present on every salinity graph, beginning around 400 dbar?</p>
         <p>Recreate this visualization and make it interactive. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Profile Visualization.</i></p>
       </div>
+      
     </div>
   </div>
-  <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="explore-wrapper2" style="width: 80%; margin: auto;">
-      <div class="vis-wrapper">
-          <img class="mySlides3" src="media/vis_1and2/temp heat 1.png" style="width:100%">
-          <img class="mySlides3" src="media/vis_1and2/temp heat 2.png" style="width:100%">
-          <img class="mySlides3" src="media/vis_1and2/temp heat 3.png" style="width:100%">
+
+  <div class="content-wrapper">
+    <div class="textwrap">
+
+
+          <img class="mySlides3" src="media/vis_1and2/temp heat 1.png" style="width: 45%;">
+          <img class="mySlides3" src="media/vis_1and2/temp heat 2.png" style="width: 45%;">
+          <img class="mySlides3" src="media/vis_1and2/temp heat 3.png" style="width: 45%;">
 
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
-      </div>
-      <div class="vis-wrapper">
-        <img class="mySlides4" src="media/vis_1and2/sal heat 1.png" style="width:100%">
-        <img class="mySlides4" src="media/vis_1and2/sal heat 2.png" style="width:100%">
-        <img class="mySlides4" src="media/vis_1and2/sal heat 3.png" style="width:100%">
+
+        <img class="mySlides4" src="media/vis_1and2/sal heat 1.png" style="width: 45%; float: right;">
+        <img class="mySlides4" src="media/vis_1and2/sal heat 2.png" style="width:45%; float: right;">
+        <img class="mySlides4" src="media/vis_1and2/sal heat 3.png" style="width:45%; float: right;">
 
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
-      </div>
-      <div class="vis-wrapper">
+
       <div class="subtitle">Changes in Temperature & Salinity over Time</div>
         <p>Let’s reorient ourselves to understand the visualizations above, known as heatmaps. First, we conserve the y-axis from the first set of graphs, thus conserving the spatial context. The range of x values from above previously denoting temperature or salinity now correspond instead to a range of colors. A day’s worth of temperature and salinity data is averaged for each interval of depth, each day becoming a <i>snapshot in time</i>. The heatmaps represent consecutive snapshots over the length of an ITP machine’s active lifetime, temperature on the left and salinity on the right. </p>
         <p>Notice that the range of days on the y-axes differ. This is due to the difference in active lifetimes. Some ITP machines malfunction, and some batteries deplete faster than others.</p>
-      </div>
-      <div class="vis-wrapper">
         <p>Questions for thought:</p>
         <p>What changes or patterns do you observe over time? Can you match patterns to those observed in the earlier graphs, for example with ITP 49 and salinity? If so, how do you interpret them? What can you infer from the consistency of patterns over time for temperature? For salinity?</p>
         <p>Recreate these visualizations and make them interactive. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Heatmap Visualization.</i></p> 
       </div>
-    </div>
+
   </div>
-  
 
 
 

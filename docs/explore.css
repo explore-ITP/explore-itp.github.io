@@ -3,72 +3,32 @@ body {
   padding: 0;
 }  
 
-.explore-wrapper3 {
-  display: inline;
-  width: 80%;
-  margin-top: 30px;
-  height: auto;
-  overflow: hidden;
-  background:
-      linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 10px, transparent 10px),
-      linear-gradient(to left, #b5d393, #b5d393 10px, transparent 10px),
-      linear-gradient(to top,#002233, #002233 10px, transparent 10px),
-      linear-gradient(to right, #002233, #002233 10px, transparent 10px);
-  background-origin: border-box;
-  background-color: rgb(119,173,144,.5);
-}
+/* Explore Pages */
 
 .explore-wrapper {
+  width: 70%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 80%;
-  margin-top: 30px;
-  height: auto;
-  overflow: hidden;
-  background:
-      linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 10px, transparent 10px),
-      linear-gradient(to left, #b5d393, #b5d393 10px, transparent 10px),
-      linear-gradient(to top,#002233, #002233 10px, transparent 10px),
-      linear-gradient(to right, #002233, #002233 10px, transparent 10px);
-  background-origin: border-box;
-  background-color: rgb(119,173,144,.5);
+  grid-template-columns: 1.5fr 1fr;
+  margin: auto;
 }
 
 .explore-wrapper2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 80%;
-  margin-top: 30px;
-  height: auto;
-  overflow: hidden;
-  background:
-      linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 10px, transparent 10px),
-      linear-gradient(to left, #b5d393, #b5d393 10px, transparent 10px),
-      linear-gradient(to top,#002233, #002233 10px, transparent 10px),
-      linear-gradient(to right, #002233, #002233 10px, transparent 10px);
-  background-origin: border-box;
-  background-color: rgb(119,173,144,.5);
-}
-
-.ref-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  width: 80%;
-  margin-top: 30px;
-  height: auto;
-  overflow: hidden;
+  grid-template-columns: 1fr 1.5fr;
+  margin: auto;
 }
 
 .vis-wrapper {
-  position: relative;
+  margin: auto;
   padding: 20px;
+  width: 100%;
 }
 
-.vis-wrapper img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
+.text-wrapper {
+  margin: auto;
+  padding: 20px;
+  width: 70%;
 }
   
   .para {
