@@ -1,3 +1,5 @@
 #Ignore all ._ files
 **/._*
 
+#Ignore .DS_Store files
+**/.DS_Store
