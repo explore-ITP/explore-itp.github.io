@@ -22,10 +22,6 @@ Notebook 4: [**ITP Location Density Visualization**](https://colab.research.goog
 
 The data story unfolds on our [**webpage.**](https://explore-itp.github.io/)
 
-### For educators:
-
-*Here will be information specific to educators, i.e. using this as a learning tool in a classroom setting*
-
 ## About the Data
 
 We used a Woods Hole Oceanographic Institute (WHOI) Ice Tethered Profiler (ITP) dataset. ITP's sit on the surface of the ice, and a long wire rope extends through the ice, down into the water, and through the water column. The sampling component moves up and down along the wire, collecting measurements. This data is then sent in real-time to WHOI via a satellite link.
