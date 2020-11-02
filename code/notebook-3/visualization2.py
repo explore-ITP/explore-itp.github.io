@@ -15,10 +15,8 @@ import plotly.io as pio
 pio.renderers.default = "browser"
 
  
-filename = "/Users/larabreitkreutz/PythonGIS/rawlocs/mastercsv.csv"
+filename = #download and add "ALL_main_downsamp.csv"
 df = pd.read_csv(filename, encoding='utf-8')
-df_short = df.head(100)
-
 
 # Identifies coordinate bounds
 BBox = (-180, 180, 60, 90)
