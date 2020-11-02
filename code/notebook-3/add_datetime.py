@@ -15,6 +15,8 @@ import math
 import inspect
 src_file_path = inspect.getfile(lambda: None)
 
+#download rawlocs data and load here
+
 folderlist = []
 
 # Iterates through directory and appends only unmodified rawlocs.dat files to folderlist
