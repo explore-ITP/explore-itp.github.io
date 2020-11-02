@@ -13,7 +13,7 @@
 /* we can take out background transition if desired */
 body {
     
-    background-color: #002233;
+    background-color: #1e2f50;
     top:0px;
     left:0px;
     width: 100%;
@@ -25,20 +25,32 @@ body {
     padding: 25px 0 600px;
      */
 
-.container {
+.container1 {
     display: grid;
     grid-template-columns: 1fr;
-    background: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2048x1152/4ea649b16731f346e7f5f6657040a2e0/photo-1449709992276-24bbca940809.jpg);
+    background: url(media/ecb-mit-lamss-icex2020-1.png);
+    background-size: cover;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: url(media/second_header.png);
     background-size: cover;
 }
 
 .heading {
-    display: block;
     margin: auto;
     text-align: center;
-    height: 400px;
-    padding: 150px 0;
+    height: 600px;
+    line-height: 600px;
 }
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
 
 .subheading {
     display: block;
@@ -53,12 +65,11 @@ body {
     font-size: 3.5em;
     font-weight: bold;
     color: whitesmoke;
-    display: inline;
 }
 
 .heading h2 {
     font-family: 'Lato';
-    font-size: 1em;
+    font-size: 1.1em;
     color: whitesmoke;
 }
 
@@ -81,7 +92,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: rgb(119,173,144,1);
+    background: rgb(109,177,193,1);
     z-index: 1;
 }
 
@@ -344,26 +355,25 @@ button:focus {outline:0;}
 
 
 /* About Page */
-.two-column-wrapper {
+.three-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: auto;
 }
 
 .profile-image-wrapper {
-    padding: 20px;
     margin: auto;
+    padding: 20px;
 }
 
 .profile-image-wrapper img {
-    width: 100%;
+    width: 70%;
     object-fit: cover;
     margin: auto;
 }
 
 .profile-content-wrapper {
-    padding: 30px;
     margin: auto;
 }
 
@@ -371,31 +381,38 @@ button:focus {outline:0;}
     color: whitesmoke;
     font-family: "Raleway";
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 5px;
+}
+
+.profile-content-wrapper h3 {
+    color: whitesmoke;
+    font-family: "Raleway";
+    text-transform: lowercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.profile-content-wrapper h3:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 25%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 4px dotted whitesmoke; /* This creates the border. Replace black with whatever color you want. */
+
 }
 
 .profile-content-wrapper p {
     color: whitesmoke;
     font-family: "Lato";
+    text-align: center;
     font-size: 1.1em;
-    padding: 10px;
+    padding: 20px;
 }
-
-
-/* Border design, about page */
-
-#box {
-    background:
-        linear-gradient(to bottom, rgb(119,173,144,1), rgb(119,173,144,1) 5px, transparent 5px),
-        linear-gradient(to left, #b5d393, #b5d393 5px, transparent 5px),
-        linear-gradient(to top,#002233, #002233 5px, transparent 5px),
-        linear-gradient(to right, #002233, #002233 5px, transparent 5px);
-    background-origin: border-box;
-    background-color: rgb(119,173,144,.5);
-  }
 
 /* Resources page */
 
@@ -433,3 +450,4 @@ button:focus {outline:0;}
     overflow: hidden;
   }
 
+  

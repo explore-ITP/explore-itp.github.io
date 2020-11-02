@@ -23,7 +23,7 @@
 </head>
 
 <header>
-<div class="container">
+<div class="container2">
   <div class="subheading">
     <h1>ARCTIC OCEAN DATA: EXPLORE WITH US</h1>
     <h2>Duke Keep Exploring Initiative + Massachusetts Institute of Technology + Woods Hole Oceanographic Institution</h2>
@@ -53,186 +53,49 @@
 </header>
 
 
-<body>
-    <div class="wrapper" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="explore-wrapper3" style="width: 80%; margin: auto;">
-    
+<body> 
     <div class="content-wrapper">
-      <div class="text-wrap">
-      <h2 class="subtitle">Changes in Temperature & Salinity with Depth and through Time</div>
-      <p class="question">Interactive Plots</p>
-      <p>The set of visualizations below show changes in temperature and salinity with ocean depth for ITP1, the first ice-tethered profiler.
-        Pressure is closely correlated with depth and thus the terms are interchangeable in this context. 
-        Pressure is measured in decibars (dbar), temperature in degrees Celsius (°C), and salinity in practical salinity units (psu). </p>
-      <p>Scroll through the three interactive plots using the arrow buttons and see their descriptions below. </p>
-    </div>
-      
-    <div class="vis-wrapper">
-      <div id="includedContent">
-      <embed class="mySlides" src="media/ITP1 Final_Colored.html" style="width:100%; height: 648px;">        
-      <embed class="mySlides" src="media/ITP1 HeatMap.html" style="width:100%" height="430">
-      <embed class="mySlides" src="media/ITP1 SalHeatMap.html" style="width:100%" height="430">
-      <br>
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    
-      <p class="question">Changes with Depth</p>
-        <p> The first visualization demonstrates each profile through the seasons of the machine's journey. 
-        Winter is pictured as dark blue, followed by spring in green, summer in pink and fall in light blue.
-        The tabs can be used to change the scope of the plot, either viewing all temperature profiles, all salinity profiles, or profiles by season. 
-        Notice how pressure changes on the y-axis. It may seem weird that the numbers become smaller further away from the origin. 
-        The top of the graph corresponds to the surface of the ocean, and therefore dbar equals 0 and increases moving towards the origin.
-        </p>
-      
-      <p class="question">Changes with Time</p>
-        <p> The second and third plots are heatmaps, which indicate temperature or salinity through the use of color and over a period of time.
-        We can see that the y-axis from the first set of graphs is the same, thus conserving the spatial context.
-        A day’s worth of temperature and salinity data is averaged for each interval of depth, each day becoming a <i>snapshot in time</i>. 
-        Therefore, the heatmaps represent consecutive snapshots over the length of an ITP machine’s active lifetime. 
-        </p>
-      
-        <p>Notice that the range of days on the y-axes differ, and some days have less color than others. 
-        This is due to the difference in active lifetimes and the variability of how much data is recorded each day. 
-        Some ITP machines malfunction, and some batteries deplete faster than others.
-        </p>
+      <div class="explore-wrapper2">
+      <div class="vis-wrapper">
+        <p>These set of visualizations show changes in temperature and salinity with ocean depth for ITP 1, the first ice-tethered profiler deployed.
+          Pressure is closely correlated with depth and thus the terms are interchangeable in this context. 
+          Pressure is measured in decibars (dbar), temperature in degrees Celsius (°C), and salinity in practical salinity units (psu). </p>
+        <p style="text-align: right;"> The visualization to the right demonstrates each profile through the seasons of the machine's journey. 
+          Winter is pictured as dark blue, followed by spring in green, summer in pink and fall in light blue.
+          The tabs can be used to change the scope of the plot, either viewing all temperature profiles, all salinity profiles, or profiles by season. 
+          Notice how pressure changes on the y-axis. It may seem weird that the numbers become smaller further away from the origin. 
+          The top of the graph corresponds to the surface of the ocean, and therefore dbar equals 0 and increases moving towards the origin.
+          </p>
+          <p class="question">Questions for thought:</p>
+          <p>What changes or patterns do you observe throughout the water column? Between seasons? What range of temperature do you observe? Salinity? How could you interpret the steep drop-off present on every salinity graph, beginning around 400 dbar?</p>
       </div>
-    </div>
-
-
-    <div class="content-wrapper">
-      <div class="text-wrap">
-      <p class="question">Static Plots</p>
-        <p>Continue viewing the same three visualizations below as static plots. We can observe these visualization for a variety of ITPs </p>
-    </div>
-    
     <div class="vis-wrapper">
+      <div class="subtitle">Changes in Temperautre and Salinity with Depth</div>
       <div id="includedContent">
-        <div>
-          <img class="mySlides2" src="media/vis_1and2/temp 1.png" style="width: 100%;">
-          <img class="mySlides2" src="media/vis_1and2/temp 2.png" style="width: 100%;">
-          <img class="mySlides2" src="media/vis_1and2/temp 3.png" style="width: 100%;">
-          <img class="mySlides2" src="media/vis_1and2/sals 1.png" style="width: 100%;">
-          <img class="mySlides2" src="media/vis_1and2/sals 2.png" style="width: 100%;">
-          <img class="mySlides2" src="media/vis_1and2/sals 3.png" style="width: 100%;">
-          <br>
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
-          
-          <div class="vis-wrapper">
-            <p class="question">Questions for thought: Changes with Depth</p>
-            <p>What changes or patterns do you observe throughout the water column? Between seasons? What range of temperature do you observe? Salinity? How could you interpret the steep drop-off present on every salinity graph, beginning around 400 dbar?</p>
-            <p>Recreate this visualization and make it interactive. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Profile Visualization.</i></p>
-          </div>
-        </div>
+      <embed src="media/ITP1 Final_Colored.html" style="width:100%; height: 648px;"></div> 
+      </div>      
+    </div>
     
-        <br>
-        
-        <div>
-          <div style="width: 48%; display: inline-block; padding: 10px;">
-            <img class="mySlides3" src="media/vis_1and2/temp heat 1.png" style="width:100%">
-            <img class="mySlides3" src="media/vis_1and2/temp heat 2.png" style="width:100%">
-            <img class="mySlides3" src="media/vis_1and2/temp heat 3.png" style="width:100%">
-            <br>
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
+
+      <div class="explore-wrapper3">
+        <div class="vis-wrapper">
+          <p class="subtitle">Changes with Depth over Time</p>
+          <div id="includedContent">
+            <embed src="media/ITP1 HeatMap.html" style="width:100%" height="430"></div>
+          <div id="includedContent">
+            <embed src="media/ITP1 SalHeatMap.html" style="width:100%" height="430"></div>
           </div>
-          <div style="width: 48%; display: inline-block; padding: 10px;">
-            <img class="mySlides4" src="media/vis_1and2/sal heat 1.png" style="width:100%">
-            <img class="mySlides4" src="media/vis_1and2/sal heat 2.png" style="width:100%">
-            <img class="mySlides4" src="media/vis_1and2/sal heat 3.png" style="width:100%">
-            <br>
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
-          </div> 
-         
           <div class="vis-wrapper">
-            <p class="question">Questions for thought: Changes with Time</p>
+            <p> The second and third plots are heatmaps, which indicate temperature or salinity through the use of color and over a period of time.
+              We can see that the y-axis from the first set of graphs is the same, thus conserving the spatial context.
+              A day’s worth of temperature and salinity data is averaged for each interval of depth, each day becoming a <i>snapshot in time</i>. 
+              Therefore, the heatmaps represent consecutive snapshots over the length of an ITP machine’s active lifetime. 
+            </p>
+            <p class="question">Questions for thought:</p>
             <p>What changes or patterns do you observe over time? Can you match patterns to those observed in the earlier graphs, for example with ITP 49 and salinity? If so, how do you interpret them? What can you infer from the consistency of patterns over time for temperature? For salinity?</p>
-            <p>Recreate these visualizations and make them interactive. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Heatmap Visualization.</i></p> 
+            <p>Recreate these visualizations for a different ITP machine. Navigate to Data Notebooks under the Resources tab, and open <i>ITP Profile Visualization.</i> and <i>ITP Heatmap Visualization.</i></p> 
           </div>
-        </div>
-      </div>
-
-      </div>                
+          </div>
     </div>
-  </div>
-      
-  </div>
-  </div>
-
-<script>
-    var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-var slideIndex2 = 1;
-showDivs2(slideIndex2);
-
-function plusDivs2(n) {
-  showDivs2(slideIndex2 += n);
-}
-
-function showDivs2(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex2-1].style.display = "block";  
-}
-
-var slideIndex3 = 1;
-showDivs3(slideIndex3);
-
-function plusDivs3(n) {
-  showDivs3(slideIndex3 += n);
-}
-
-function showDivs3(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides3");
-  if (n > x.length) {slideIndex3 = 1}
-  if (n < 1) {slideIndex3 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex3-1].style.display = "block";  
-}
-
-var slideIndex4 = 1;
-showDivs4(slideIndex4);
-
-function plusDivs4(n) {
-  showDivs4(slideIndex4 += n);
-}
-
-function showDivs4(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides4");
-  if (n > x.length) {slideIndex4 = 1}
-  if (n < 1) {slideIndex4 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex4-1].style.display = "block";  
-}
-
-</script>
 
 </body>

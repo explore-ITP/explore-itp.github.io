@@ -6,22 +6,29 @@ body {
 /* Explore Pages */
 
 .explore-wrapper {
-  width: 70%;
+  width: 80%;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.6fr 1fr;
   margin: auto;
 }
 
 .explore-wrapper2 {
   width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.65fr;
+  margin: auto;
+}
+
+.explore-wrapper3 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2.15fr 1fr;
   margin: auto;
 }
 
 .vis-wrapper {
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -41,10 +48,15 @@ body {
     font-family: "Lato";
     font-size: 1.1em;
   }
-  
+
+#igraph {
+  width: 100%;
+  max-height: 100%;
+}
   
 .mySlides {
   display:none;
+
 }
 
 .mySlides2 {
