@@ -3,7 +3,7 @@
 Our team was formed this summer in the wake of COVID-19, through the *Duke Keep Exploring* initiative. Duke University reached out to alumni to create projects for students whose summer opportunities were displaced. This data exploration project is a direct consequence of this pairing. The team members are:
 
 1. **Eeshan Bhatt** - PhD Candidate at MIT-WHOI Joint Program  - Duke BSE '15
-2. **Lara Breitkreutz** - Data Story Intern - Environmental Science w/ Certificate in Documentary Studies BS '20
+2. **Lara Breitkreutz** - Data Story Development Intern - Environmental Science w/ Certificate in Documentary Studies BS '20
 3. **Alexandra Rivera** - Data Science Intern - Civil and Environmental Engineering, anticipated BSE '23
 
 You can learn more about us on our website, *insert link here*.
