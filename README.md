@@ -6,7 +6,7 @@ Our team was formed this summer in the wake of COVID-19, through the *Duke Keep 
 2. **Lara Breitkreutz** - Data Story Development Intern - Environmental Science w/ Certificate in Documentary Studies BS '20
 3. **Alexandra Rivera** - Data Science Intern - Civil and Environmental Engineering, anticipated BSE '23
 
-You can learn more about us on our *GitHub website*(https://explore-itp.github.io)
+You can learn more about us on our [*GitHub website*](https://explore-itp.github.io)
 
 ## How to use this Repo
 
